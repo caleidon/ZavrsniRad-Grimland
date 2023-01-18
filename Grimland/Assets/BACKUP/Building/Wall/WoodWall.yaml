@@ -1,0 +1,9 @@
+!BuildingTile
+Name: WoodWall
+DisplayName: Wooden Wall
+MoveSpeedMultiplier: 0
+MaxHealth: 100
+Color: 2, 0, 1, 1
+Atlas: PlankAtlas
+ApplicableJobs:
+    - Deconstruct

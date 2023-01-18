@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Base Game
+  m_EditorClassIdentifier: 
+  m_GroupName: Base Game
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e52f756bec32d034183438444a4c1537
+  m_SerializeEntries:
+  - m_GUID: 06c964285b082bf40937536cd2f15958
+    m_Address: Sprites
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sprites
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8f5dd383cecf4c6478550b75cd44a836
+    m_Address: Defs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - yaml
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 32f00ab5cebd38a409cadcf17a8a1416
+    m_Address: Assets/Resources_moved/Behaviors
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - behaviors
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ef40c5710b575de4da391a289c9c0acc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d0705ee354ae1474bbac371ef1463db9, type: 2}
+    - {fileID: 11400000, guid: 8aa2b2a507a1dc8419546a28b8e7519c, type: 2}

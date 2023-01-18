@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Human
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Human Behavior
+    behaviorDescription: A behavior of a human
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(454.5,30)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,280)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"JobChooser","NodeData":{"Offset":"(-1.7020874,141.914917)"},"ID":2,"Name":"Job
+        Chooser","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(-253.829788,178.723419)"},"ID":3,"Name":"Wander","Instant":true,"ExternalBehavior[]externalBehaviors":[0],"SharedNamedVariable[]variables":[],"Booleancollapsed":true},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(-130,180)"},"ID":4,"Name":"Construct","Instant":true,"ExternalBehavior[]externalBehaviors":[1],"SharedNamedVariable[]variables":[],"Booleancollapsed":true},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(0,180)"},"ID":5,"Name":"CutVegetation","Instant":true,"ExternalBehavior[]externalBehaviors":[2],"SharedNamedVariable[]variables":[],"Booleancollapsed":true},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(160,180)"},"ID":6,"Name":"HaulItemToZone","Instant":true,"ExternalBehavior[]externalBehaviors":[3],"SharedNamedVariable[]variables":[],"Booleancollapsed":true},{"Type":"BehaviorDesigner.Runtime.Tasks.BehaviorTreeReference","NodeData":{"Offset":"(320,180)"},"ID":7,"Name":"HaulItemToBlueprint","Instant":true,"ExternalBehavior[]externalBehaviors":[4],"SharedNamedVariable[]variables":[],"Booleancollapsed":true}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"creatureId","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects:
+        - {fileID: 11400000, guid: 435da0bdd5677d54f96c01c6b68e6278, type: 2}
+        - {fileID: 11400000, guid: c3802c28e0e4e144dbc65983c86f465b, type: 2}
+        - {fileID: 11400000, guid: 52e7bf098903aee478bc4a179aaea336, type: 2}
+        - {fileID: 11400000, guid: 58420bc1cebebe04d925f61880c0e755, type: 2}
+        - {fileID: 11400000, guid: f7a56b6481afff34cb7f51c1a6ed30f4, type: 2}
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.8

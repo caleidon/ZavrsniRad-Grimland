@@ -1,0 +1,7 @@
+!Material
+Name: Wood
+DisplayName: Wood
+MaxStackSize: 64
+MaxHealth: 100
+MoveSpeedMultiplier: 0.8
+Sprite: item_woodLog_1

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: HaulItemToBlueprint
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Haul Item To Blueprint
+    behaviorDescription: Hauls an item to an available zone
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(604.5,30)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,150)"},"ID":1,"Name":"HaulItemToBlueprintJob","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"HaulItemToBlueprintInitializer","NodeData":{"Offset":"(-239.129425,151.324341)"},"ID":2,"Name":"Haul
+        Item To Blueprint Initializer","Instant":true},{"Type":"FindOptionalItemsAndBlueprints","NodeData":{"Offset":"(-2.166626,149.999939)"},"ID":3,"Name":"Find
+        Optional Items And Blueprints","Instant":true,"SharedIntExportGloballyWantedAmount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"WantedAmount","IsShared":true,"Int32mValue":0}},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(222.727478,147.727173)"},"ID":4,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnSuccess","NodeData":{"Offset":"(-277.803162,126.8183)"},"ID":5,"Name":"Return
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.UntilFailure","NodeData":{"Offset":"(0.227172852,123.181824)"},"ID":6,"Name":"Until
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-3.04348,121.304321)"},"ID":7,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"DetermineNextItemToTake","NodeData":{"Offset":"(-260.569122,116.590866)"},"ID":8,"Name":"Determine
+        Next Item To Take","Instant":true,"SharedStringExportItemToTakeId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemToTakeId","IsShared":true},"SharedVector3IntExportItemToTakeNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemToTakeNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"CalculateItemAmountToTake","NodeData":{"Offset":"(-42.7966,124.545456)"},"ID":9,"Name":"Calculate
+        Item Amount To Take","Instant":true,"SharedIntExportItemAmountToTake":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ItemAmountToTake","IsShared":true,"Int32mValue":0},"SharedIntImportWantedAmount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"WantedAmount","IsShared":true,"Int32mValue":0},"SharedStringImportItemToTakeId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemToTakeId","IsShared":true}},{"Type":"MoveToNode","NodeData":{"Offset":"(127.2034,124.545456)"},"ID":10,"Name":"Move
+        To Node","Instant":true,"SharedVector3IntImportTargetNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemToTakeNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"PutItemInHand","NodeData":{"Offset":"(257.2034,124.545456)"},"ID":11,"Name":"Put
+        Item In Hand","Instant":true,"SharedStringImportItemId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemToTakeId","IsShared":true},"SharedIntImportItemAmountToTake":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ItemAmountToTake","IsShared":true,"Int32mValue":0}}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnSuccess","NodeData":{"Offset":"(255.902222,125.000214)"},"ID":12,"Name":"Return
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.UntilFailure","NodeData":{"Offset":"(0,110)"},"ID":13,"Name":"Until
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,110)"},"ID":14,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"DetermineNextBlueprint","NodeData":{"Offset":"(-116.077759,140.75293)"},"ID":15,"Name":"Determine
+        Next Blueprint","Instant":true,"SharedStringExportBlueprintTargetId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"BlueprintTargetId","IsShared":true},"SharedVector3IntExportBlueprintNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"BlueprintNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"MoveToNode","NodeData":{"Offset":"(29.130249,140)"},"ID":16,"Name":"Move
+        To Node","Instant":true,"SharedVector3IntImportTargetNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"BlueprintNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"DepositToBlueprint","NodeData":{"Offset":"(175.757935,141.30835)"},"ID":17,"Name":"Deposit
+        To Blueprint","Instant":true,"SharedStringImportBlueprintId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"BlueprintTargetId","IsShared":true}}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Inverter","NodeData":{"Offset":"(494,141)"},"ID":18,"Name":"Inverter","Instant":true,"Children":[{"Type":"HasCreatureItemAmountInHand","NodeData":{"Offset":"(4,121)"},"ID":19,"Name":"Has
+        Creature Item Amount In Hand","Instant":true,"SharedIntImportRequiredAmount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"","Int32mValue":0}}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"WantedAmount","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ItemAmountToTake","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemToTakeId","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemToTakeNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"BlueprintTargetId","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"BlueprintNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.8

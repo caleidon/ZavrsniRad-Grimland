@@ -1,0 +1,8 @@
+!Food
+Name: Apple
+DisplayName: Apple
+MoveSpeedMultiplier: 0.9
+MaxStackSize: 1
+MaxHealth: 200
+Sprite: human
+Extra: nutritionwerks

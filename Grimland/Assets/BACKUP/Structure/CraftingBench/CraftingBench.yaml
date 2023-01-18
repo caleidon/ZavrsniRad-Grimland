@@ -1,0 +1,14 @@
+!StructureTile
+Name: CraftingBench
+DisplayName: Crafting Bench
+MoveSpeedMultiplier: 0.7
+DirectionSprites:
+  South: crafting_bench_south
+  North: crafting_bench_north
+  West: crafting_bench_west
+  East: crafting_bench_east
+YamlStructure:
+  - [Normal, Pivot, Normal]
+  - [Empty, UsePoint, Empty]
+ApplicableJobs:
+  - Deconstruct

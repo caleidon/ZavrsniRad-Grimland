@@ -1,0 +1,41 @@
+{
+    "folders": [
+        {
+            "path": "./Defs"
+        },
+        {
+            "path": "./Schemas"
+        }
+    ],
+    "settings": {
+        "prettier.tabWidth": 4,
+        "yaml.schemas": {
+            "./../Schemas/GlobalSchema.json": "**/*",
+            "./../Schemas/Tiles/BaseSchema.json": "Tiles/Base/**/*",
+            "./../Schemas/Tiles/FloorSchema.json": "Tiles/Floor/**/*",
+            "./../Schemas/Tiles/VegetationSchema.json": "Tiles/Vegetation/**/*",
+            "./../Schemas/Tiles/StructureSchema.json": "Tiles/Structure/**/*",
+            "./../Schemas/Tiles/BuildingSchema.json": "Tiles/Building/**/*",
+            "./../Schemas/Items/ItemSchema.json": "Items/**/*",
+            "./../Schemas/Creatures/CreatureSchema.json": "Creatures/**/*"
+        },
+        "yaml.customTags": [
+            // Types
+            // Tiles
+            "!BaseTile mapping",
+            "!FloorTile mapping",
+            "!VegetationTile mapping",
+            "!StructureTile mapping",
+            "!BuildingTile mapping",
+            "!BaseTile mapping",
+            // Items
+            "!Material mapping",
+            "!Food mapping",
+            // Creatures
+            "!Human mapping",
+            // Components
+            "!CompBlueprint mapping"
+            // Properties
+        ]
+    }
+}

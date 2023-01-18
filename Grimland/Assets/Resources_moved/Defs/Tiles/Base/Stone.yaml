@@ -1,0 +1,7 @@
+!BaseTile
+Name: Stone
+DisplayName: Stone
+MoveSpeedMultiplier: 0.9
+GenHeight: 1.0
+Fertility: 0
+Sprite: stone

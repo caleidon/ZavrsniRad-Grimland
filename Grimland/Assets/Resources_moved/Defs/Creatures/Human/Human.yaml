@@ -1,0 +1,6 @@
+!Human
+Name: Human
+DisplayName: Human
+Behavior: Human
+BaseMovementSpeed: 3
+Sprite: human

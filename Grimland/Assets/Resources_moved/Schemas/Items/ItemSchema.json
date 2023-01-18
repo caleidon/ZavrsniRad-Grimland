@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "Item Requirement Schema",
+    "description": "A specific schema that checks for required properties in YAML files",
+    "required": ["MaxStackSize", "MaxHealth", "MoveSpeedMultiplier", "Sprite"]
+}

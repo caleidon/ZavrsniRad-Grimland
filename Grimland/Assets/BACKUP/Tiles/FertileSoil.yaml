@@ -1,0 +1,7 @@
+!BaseTile
+Name: FertileSoil
+DisplayName: Fertile soil
+MoveSpeedMultiplier: 0.7
+Fertility: 1
+GenHeight: 0-0
+Sprite: soil

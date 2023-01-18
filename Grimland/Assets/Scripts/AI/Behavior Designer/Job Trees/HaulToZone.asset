@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: HaulToZone
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Haul To Zone
+    behaviorDescription: Hauls an item to an available zone
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(454.5,30)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,130)"},"ID":1,"Name":"HaulToZoneJob","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"HaulToZoneInitializer","NodeData":{"Offset":"(-137.943176,123.640663)"},"ID":2,"Name":"Haul
+        To Zone Initializer","Instant":true,"SharedStringExportItemId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemId","IsShared":true},"SharedVector3IntExportItemNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"},"SharedStringExportZoneId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ZoneId","IsShared":true},"SharedIntExportZoneCapacity":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ZoneCapacity","IsShared":true,"Int32mValue":0},"SharedHaulDestinationExportHaulDestination":{"Type":"SharedHaulDestination","Name":"HaulDestination","IsShared":true},"SharedVector3IntExportDepositNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"DepositNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"BehaviorDesigner.Runtime.Tasks.ConditionalEvaluator","NodeData":{"Offset":"(136.356,119.95002)","Comment":"If
+        the target zone was in any way modified, cancel this entire job."},"ID":3,"Name":"Was
+        Zone Tampered","Instant":true,"SharedBoolreevaluate":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":"","BooleanmValue":true},"ConditionalconditionalTask":{"Type":"WasZoneTampered","SharedStringImportZoneId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ZoneId","IsShared":true}},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(2.49994278,110.3617)"},"ID":4,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnSuccess","NodeData":{"Offset":"(-177.72197,121.111122)"},"ID":5,"Name":"Return
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.UntilFailure","NodeData":{"Offset":"(4.44446754,118.888878)"},"ID":6,"Name":"Until
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-3.33333015,122.222214)"},"ID":7,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-67.89475,107.981873)"},"ID":8,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CalculateItemAmountToTake","NodeData":{"Offset":"(-170,107.777786)"},"ID":9,"Name":"Calculate
+        Item Amount To Take","Instant":true,"SharedIntExportItemAmountToTake":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ItemAmountToTake","IsShared":true,"Int32mValue":0},"SharedIntImportWantedAmount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ZoneCapacity","IsShared":true,"Int32mValue":0},"SharedStringImportItemToTakeId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemId","IsShared":true}},{"Type":"MoveToNode","NodeData":{"Offset":"(-4.11224556,111.777786)"},"ID":10,"Name":"Move
+        To Node","Instant":true,"SharedVector3IntImportTargetNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"PutItemInHand","NodeData":{"Offset":"(130,107.777786)"},"ID":11,"Name":"Put
+        Item In Hand","Instant":true,"SharedStringImportItemId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemId","IsShared":true},"SharedIntImportItemAmountToTake":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ItemAmountToTake","IsShared":true,"Int32mValue":0}}]},{"Type":"ShouldContinueTakingItem","NodeData":{"Offset":"(110,107.777786)"},"ID":12,"Name":"Should
+        Continue Taking Item","Instant":true,"SharedIntImportZoneCapacity":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ZoneCapacity","IsShared":true,"Int32mValue":0},"SharedVector3IntImportExportLastItemNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"},"SharedStringExportItemId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemId","IsShared":true}}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.ReturnSuccess","NodeData":{"Offset":"(230,130)"},"ID":13,"Name":"Return
+        Success","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.UntilFailure","NodeData":{"Offset":"(0,110)"},"ID":14,"Name":"Until
+        Failure","Instant":true,"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-2.380991,106.984131)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-120,120)"},"ID":16,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"MoveToNode","NodeData":{"Offset":"(-60.9022522,113.62571)"},"ID":17,"Name":"Move
+        To Node","Instant":true,"SharedVector3IntImportTargetNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"DepositNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"DepositItem","NodeData":{"Offset":"(60,110)"},"ID":18,"Name":"Deposit
+        Item","Instant":true,"SharedHaulDestinationImportHaulDestination":{"Type":"SharedHaulDestination","Name":"HaulDestination","IsShared":true}}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(240,120)"},"ID":19,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"HasCreatureItemAmountInHand","NodeData":{"Offset":"(-110,110)"},"ID":20,"Name":"Has
+        Creature Item Amount In Hand","Instant":true,"SharedIntImportRequiredAmount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"","Int32mValue":0}},{"Type":"DetermineNextHaulDestination","NodeData":{"Offset":"(124.076416,110.679443)"},"ID":21,"Name":"Determine
+        Next Haul Destination","Instant":true,"SharedStringImportZoneId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ZoneId","IsShared":true},"SharedHaulDestinationExportHaulDestination":{"Type":"SharedHaulDestination","Name":"HaulDestination","IsShared":true},"SharedVector3IntExportDepositNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"DepositNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}}]}]}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Inverter","NodeData":{"Offset":"(487.77713,142.222229)"},"ID":22,"Name":"Inverter","Instant":true,"Children":[{"Type":"HasCreatureItemAmountInHand","NodeData":{"Offset":"(1.11110973,122.222214)"},"ID":23,"Name":"Has
+        Creature Item Amount In Hand","Instant":true,"SharedIntImportRequiredAmount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"","Int32mValue":0}}]}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"ItemNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ItemId","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"ZoneId","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ZoneCapacity","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"ItemAmountToTake","IsShared":true,"Int32mValue":0},{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"DepositNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"DepositInventoryId","IsShared":true},{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":"AmountToDeposit","IsShared":true,"Int32mValue":0},{"Type":"SharedHaulDestination","Name":"HaulDestination","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.8

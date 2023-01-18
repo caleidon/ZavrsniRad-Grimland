@@ -1,0 +1,9 @@
+!VegetationTile
+Name: GrassTall
+DisplayName: Tall grass
+MoveSpeedMultiplier: 0.98
+MaxHealth: 5
+ApplicableJobs:
+    - ""
+GrowthSprites:
+    - tree

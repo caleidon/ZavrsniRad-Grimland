@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "Structure Requirement Schema",
+    "description": "A specific schema that checks for required properties in YAML files",
+    "required": ["MoveSpeedMultiplier", "ApplicableJobs"]
+}

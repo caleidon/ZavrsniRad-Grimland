@@ -1,0 +1,7 @@
+!BaseTile
+Name: DeepWater
+DisplayName: Deep water
+MoveSpeedMultiplier: 0
+GenHeight: 0,0-0,15
+Fertility: 0
+Sprite: water

@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "title": "GYAML Schema",
+  "description": "The general schema that applies to all Grimland YAML files",
+  "properties": {
+    "Name": {
+      "type": "string",
+      "description": "Name (similar to ID) of a particular Def. Must not contain spaces.",
+      "pattern": "^[^\\s]*$"
+    },
+    "DisplayName": {
+      "type": "string",
+      "description": "Name which will be (nicely) displayed to the player in-game"
+    },
+    "MoveSpeedMultiplier": {
+      "type": "number",
+      "description": "The movement speed multiplier on this tile type",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "Sprite": {
+      "type": "string",
+      "description": "An image / animation of a Def"
+    },
+    "YamlStructure": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["Empty", "Normal", "Pivot", "UsePoint"]
+        }
+      },
+      "description": "Structure of a StructureTile defined in YAML format"
+    },
+    "Fertility": {
+      "type": "number",
+      "description": "The base fertility of a tile",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "GenHeight": {
+      "type": "string",
+      "description": "The generation height for tiles that are naturally generated when making a new map"
+    },
+    "DirectionSprites": {
+      "type": "object",
+      "description": "Sprites which will be used for the 4 facing directions when rotated",
+      "properties": {
+        "South": { "type": "string" },
+        "North": { "type": "string" },
+        "East": { "type": "string" },
+        "West": { "type": "string" }
+      },
+      "required": ["South", "North", "East", "West"]
+    },
+    "GrowthSprites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sprites that are used as a vegetation grows"
+    },
+    "ApplicableJobs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of jobs that can be performed on a Thing"
+    },
+    "MaxHealth": {
+      "type": "number",
+      "description": "The maximum (and starting) health of a Thing"
+    },
+    "MaxStackSize": {
+      "type": "number",
+      "description": "The maximum stack size of an Item"
+    },
+    "Color": {
+      "type": "string",
+      "description": "The color of a specific tile. Format: R, G, B, A",
+      "pattern": "^([0-1], [0-1], [0-1], [0-1])$"
+    },
+    "Atlas": {
+      "type": "string",
+      "description": "The atlas (RuleTile) that a BuildingTile uses to connect with neighbors"
+    },
+    "Extra": {
+      "type": "string",
+      "description": "The atlas (RuleTile) that a BuildingTile uses to connect with neighbors"
+    }
+  },
+  "required": ["Name", "DisplayName"],
+  "additionalProperties": false
+}

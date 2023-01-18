@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Chop
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: CutVegetation
+    behaviorDescription: Makes a creature go to a vegetation and cut it down
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(454.5,30)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,130)"},"ID":1,"Name":"CutVegetationJob","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"CutVegetationInitializer","NodeData":{"Offset":"(-165.5,160)"},"ID":2,"Name":"Cut
+        Vegetation Initializer","Instant":true,"SharedStringExportVegetationId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"VegetationId","IsShared":true},"SharedVector3IntExportVegetationNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"VegetationNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"MoveToNode","NodeData":{"Offset":"(4.5,160)"},"ID":3,"Name":"Move
+        To Node","Instant":true,"SharedVector3IntImportTargetNode":{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"VegetationNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"}},{"Type":"CutVegetation","NodeData":{"Offset":"(150,160)"},"ID":4,"Name":"Cut
+        Vegetation","Instant":true,"SharedStringImportVegetationId":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"VegetationId","IsShared":true}}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedVector3Int","Name":"VegetationNode","IsShared":true,"Vector3IntmValue":"(0,
+        0, 0)"},{"Type":"BehaviorDesigner.Runtime.SharedString","Name":"VegetationId","IsShared":true}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.8

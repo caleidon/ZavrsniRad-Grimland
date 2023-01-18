@@ -1,0 +1,11 @@
+!FloorTile
+Name: Grass
+DisplayName: Grass
+MoveSpeedMultiplier: 0.8
+Sprite: testwall
+ApplicableJobs:
+  - "RemoveFloor"
+MaxHealth: 30
+RequiredMaterials:
+  - Wood: 10
+TicksToConstruct: 10

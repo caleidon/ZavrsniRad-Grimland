@@ -1,0 +1,7 @@
+!BaseTile
+Name: ShallowWater
+DisplayName: Shallow water
+MoveSpeedMultiplier: 0
+GenHeight: 0.2
+Fertility: 0
+Sprite: water

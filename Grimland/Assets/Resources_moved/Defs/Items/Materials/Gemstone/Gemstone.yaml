@@ -1,0 +1,7 @@
+!Material
+Name: Gemstone
+DisplayName: Gemstone
+MaxStackSize: 1
+MaxHealth: 1000
+MoveSpeedMultiplier: 0.95
+Sprite: human

@@ -1,0 +1,13 @@
+!VegetationTile
+Name: Tree
+DisplayName: Tree
+MoveSpeedMultiplier: 0.5
+MaxHealth: 100
+ApplicableJobs:
+    - ""
+GrowthSprites:
+    - tree
+DropOnDestroy:
+    - ItemName: "Wood"
+      MinAmount: 5
+      MaxAmount: 10
